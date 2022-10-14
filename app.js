@@ -23,3 +23,36 @@ let x = setInterval(function() {
 }, 1000);
 
 
+
+
+const playSongs = document.querySelector("#playing");
+
+
+const songs = [
+    "./songss/1.mp3",
+    "./songss/2.mp3",
+    "./songss/3.mp3",
+    "./songss/4.mp3",
+    "./songss/5.mp3",
+    "./songss/6.mp3",
+    "./songss/7.mp3",
+    "./songss/9.mp3",
+    "./songss/8.mp3",
+    "./songss/10.mp3"
+]
+
+const song = new Audio;
+
+
+function newAudio(){
+    let secretNumber = Math.trunc(Math.random() * 9 + 1);
+
+    song.src = songs[secretNumber];
+    song.play();
+}
+
+
+playSongs.addEventListener('click', ()=>{
+     newAudio();
+    })
+

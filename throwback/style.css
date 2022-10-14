@@ -75,6 +75,10 @@ body{
     gap: 5px;
 }
 
+.img-cons:hover .play{
+    opacity: 0.9;
+}
+
 .flex{
     display: flex;
     flex-direction: column;
@@ -95,10 +99,10 @@ body{
     transition: 0.5s ease-in-out;
 }
 
-/* .play:hover{
-    transition: 0.5s ease-in-out;
-    opacity: 1;
-} */
+.play:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.74) ;
+}
 
 .tall{
     height: 100vh;
@@ -242,6 +246,3 @@ footer{
 
 
 
-.img-cons:hover .play{
-    opacity: 0.9;
-}
