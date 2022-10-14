@@ -91,13 +91,14 @@ body{
     position:absolute;
     left: 40%;
     top: 50%;
-    opacity: 0.4;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
-.play:hover{
+/* .play:hover{
     transition: 0.5s ease-in-out;
     opacity: 1;
-}
+} */
 
 .tall{
     height: 100vh;
@@ -237,4 +238,10 @@ footer{
     footer{
         font-size: 9px;
     }
+}
+
+
+
+.img-cons:hover .play{
+    opacity: 0.9;
 }

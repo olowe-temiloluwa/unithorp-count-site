@@ -20,4 +20,6 @@ let x = setInterval(function() {
     
     document.querySelector(".seconds").innerHTML =seconds; 
     
-    }, 1000);
+}, 1000);
+
+
