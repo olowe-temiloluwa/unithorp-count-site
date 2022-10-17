@@ -44,15 +44,32 @@ const songs = [
 const song = new Audio;
 
 
+let check = 0;
+
+
 function newAudio(){
     let secretNumber = Math.trunc(Math.random() * 9 + 1);
 
     song.src = songs[secretNumber];
+    check = 1;
     song.play();
+    playSongs.textContent='playing'
+}
+
+
+function stopAudio() {
+    check = 0;
+    song.pause();
+    playSongs.textContent='Play Song'
 }
 
 
 playSongs.addEventListener('click', ()=>{
-     newAudio();
+    if (check === 1) {
+        stopAudio()
+    }
+    else{
+        newAudio()
+    }
     })
 

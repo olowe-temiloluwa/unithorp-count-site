@@ -33,6 +33,7 @@ body{
 .up:hover{
     background-color: rgb(255, 30, 0);
     color: white;
+    transition: 1s ease-in-out;
 }
 
 .well-wishing{
