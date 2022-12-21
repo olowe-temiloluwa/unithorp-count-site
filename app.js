@@ -20,7 +20,14 @@ let x = setInterval(function() {
     
     document.querySelector(".seconds").innerHTML =seconds; 
     
+    if(distance < 0){
+        document.querySelector('.timing').style.display = 'none';
+     }
+
+
 }, 1000);
+
+
 
 
 
